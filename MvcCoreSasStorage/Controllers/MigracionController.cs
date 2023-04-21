@@ -22,10 +22,10 @@ namespace MvcCoreSasStorage.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(string algo)
         {
-            //        string azureKeys =
-            //"DefaultEndpointsProtocol=https;AccountName=storageaccountpaco;AccountKey=A5IdMIsgAdfHuO46U8QdbruPy0PXfILvLTW29uTxTth7bqOHiOrRuTYCdQrW+OC48J0hO41t059P+AStEBO4mA==;EndpointSuffix=core.windows.net";
             string azureKeys =
-                "UseDevelopmentStorage=true";
+                "DefaultEndpointsProtocol=https;AccountName=storageaccountxiang;AccountKey=GYsOg9jYSu/rO2TrV9oCZd5uNFHELJttd1HZJ9Kknz3ntofI4AdRiLOjwTIP5MzHTCRFxp9Y+Yme+ASttcFqbA==;EndpointSuffix=core.windows.net";
+            //string azureKeys =
+            //    "UseDevelopmentStorage=true";
             TableServiceClient tableServiceClient =
                 new TableServiceClient(azureKeys);
             TableClient tableClient =
